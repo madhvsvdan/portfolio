@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --colorPrimary: hsl(214, 70%, 50%);
+  --colorSecondary: hsl(214, 70%, 60%);
+  --colorDark: #111827;
+  --colorMedium: #545964;
+  --colorLight: #ece9e9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: var(--colorDark);
+}
+p,
+li,
+span,
+input,
+label,
+textarea {
+  color: var(--colorMedium);
+}
+
+a {
+  text-decoration: none;
+  color: var(--colorDark);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Containers */
+.container {
+  padding: 0 1rem;
+}
+
+.container-center {
+  max-width: 600px;
+  margin: auto;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.project-container h2 {
+  text-align: left;
+}
+
+/* Links + Buttons */
+.link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.link-primary {
+  background-color: var(--colorPrimary);
+  color: white;
+}
+
+.link-secondary {
+  color: var(--colorPrimary);
+  border: 1px solid var(--colorPrimary);
+}
+
+.link-active {
+  font-weight: 700;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .hero-project {
+  margin-top: 7rem;
+}
+
+.blog-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-skills {
+  background-color: var(--colorLight);
+  color: var(--colorDark);
+  border: 2px solid var(--colorPrimary);
+}
+.link-skills:hover {
+  transform: scale(1.1);
+}
+
+/* Lists */
+.list-non-bullet {
+  list-style: none;
+}
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+
+/* Navbar */
+.brand-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--colorPrimary);
+  color: var(--colorLight);
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar-links li a {
+  color: var(--colorLight);
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover {
+  background-color: var(--colorSecondary);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--colorLight);
+  border-radius: 10px;
+}
+@media (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    position: sticky;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links ul li {
+    text-align: center;
+  }
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+}
+/* Header */
+.hero {
+  padding: 2rem;
+  height: 92vh;
+}
+
+.hero-img {
+  max-width: 400px;
+  margin: auto;
+  display: block;
+}
+
+.hero h1 {
+  text-align: center;
+  color: var(--colorDark);
+  margin-top: 6rem;
+  font-size: 2rem;
+}
+.hero p {
+  text-align: center;
+  color: var(--colorMedium);
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+}
+
+section h2,
+p {
+  text-align: left;
+}
+
+.off-white {
+  background-color: var(--colorLight);
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colorPrimary);
+  color: var(--colorLight);
+}
+.footer-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-links li a {
+  color: var(--colorLight);
+  padding: 1rem;
+  display: block;
+}
+
+.footer-links li:hover {
+  background-color: var(--colorSecondary);
+}
