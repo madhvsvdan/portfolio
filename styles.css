@@ -104,6 +104,10 @@ ul {
   flex-direction: column;
 }
 
+.blog > p {
+  margin-bottom: 4px;
+}
+
 .skills {
   display: flex;
   flex-direction: row;
