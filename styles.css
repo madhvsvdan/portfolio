@@ -59,7 +59,7 @@ ul {
 
 .project-container {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 .project-container h2 {
   text-align: left;
@@ -266,4 +266,10 @@ p {
 
 .footer-links li:hover {
   background-color: var(--colorSecondary);
+}
+
+.mark {
+  color: var(--colorMedium);
+  font-size: medium;
+  font-weight: bold;
 }
