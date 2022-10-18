@@ -4,7 +4,7 @@
 
 <hr/>
 
-[Live demo of the app](https://ngc-mark14.netlify.app/)
+[Live demo of the app](https://madhusudan.netlify.app/index.html)
 
 <hr/>
 
