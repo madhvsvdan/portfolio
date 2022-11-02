@@ -4,7 +4,7 @@
 
 <hr/>
 
-![Screenshot](https://github.com/madhvsvdan/mark03/blob/main/03.png?raw=true)
+![Screenshot](https://github.com/madhvsvdan/portfolio/blob/main/03.png?raw=true)
 
 [Live demo of the app](https://madhusudan.netlify.app/index.html)
 
